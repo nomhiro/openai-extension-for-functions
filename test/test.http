@@ -1,0 +1,19 @@
+### Create a new chatbot
+PUT http://localhost:7071/api/chats/testchat20240603
+Content-Type: application/json
+
+{
+  "instructions": "あなたは親切なアシスタントです。関西弁で返答してください。"
+}
+
+
+### Send the first message to the chatbot - 名古屋で一泊二日の観光をしたい。
+POST http://localhost:7071/api/chats/testchat20240603?message=名古屋で一泊二日の観光をしたい。
+
+
+### Get the chatbot's response
+GET http://localhost:7071/api/chats/testchat20240603?timestampUTC=2024-06-11T07:51:10Z
+
+
+### Send the second message to the chatbot - やっぱり三泊にしようかなー。
+POST http://localhost:7071/api/chats/testchat20240603?message=やっぱり三泊にしようかなー。
