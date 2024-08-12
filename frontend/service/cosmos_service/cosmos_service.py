@@ -8,8 +8,8 @@ import azure.cosmos.cosmos_client as CosmosClient
 # DATABASE_NAME = os.getenv('COSMOSDB_DATABASE_NAME')
 # CONTAINER_NAME = os.getenv('COSMOSDB_CONTAINER_NAME')
 
-COSMOSDB_URI="https://rag-cosmos-001.documents.azure.com:443/"
-COSMOSDB_KEY="fgyG2Z6sOb5Z55aK4neExdvhDg1MLYhAo4ytJgbqBEKDa44n4mY24iZQM7wWLvto5QUnGj7IdxvEACDbsj8OfA=="
+COSMOSDB_URI=os.getenv('COSMOSDB_URI')
+COSMOSDB_KEY=os.getenv('COSMOSDB_KEY')
 DATABASE_NAME="openai-ext-for-func"
 
 # cosmosDB用のクラス
