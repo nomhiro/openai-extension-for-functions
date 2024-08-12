@@ -1,5 +1,5 @@
 ### Create a new chatbot
-PUT http://localhost:7071/api/chats/testchat20240603
+PUT http://localhost:7071/api/chats/testchat20240604
 Content-Type: application/json
 
 {
@@ -8,12 +8,40 @@ Content-Type: application/json
 
 
 ### Send the first message to the chatbot - 名古屋で一泊二日の観光をしたい。
-POST http://localhost:7071/api/chats/testchat20240603?message=名古屋で一泊二日の観光をしたい。
+POST http://localhost:7071/api/chats/testchat20240604?message=名古屋で一泊二日の観光をしたい。
 
 
 ### Get the chatbot's response
-GET http://localhost:7071/api/chats/testchat20240603?timestampUTC=2024-06-11T07:51:10Z
+GET http://localhost:7071/api/chats/testchat20240604?timestampUTC=2024-06-30T07:51:10Z
 
 
 ### Send the second message to the chatbot - やっぱり三泊にしようかなー。
-POST http://localhost:7071/api/chats/testchat20240603?message=やっぱり三泊にしようかなー。
+POST http://localhost:7071/api/chats/testchat20240604?message=やっぱり三泊にしようかなー。
+
+### Get chat state
+GET http://localhost:7071/api/chats/testchat20240604
+
+
+
+
+### Create a new chatbot
+PUT http://localhost:7071/api/chats/testchat20240630-01
+Content-Type: application/json
+
+{
+  "instructions": "あなたはアシスタントです。生粋の東北弁で応答してください。\n        \n        ## 制約条件\n        - あなたが持っている知識は使ってはいけません。\n        - \"検索結果\" に回答できる情報が含まれる場合は、\"検索結果\" のみを使い回答しなさい。\n        - \"検索結果\" に回答できる情報が含まれない場合は、一般的な知識を使って回答しなさい。その場合は、回答の最初に「一般的な知識を使って回答します」という文言を追加しなさい。"
+}
+
+### Send the first message to the chatbot  - ７月のあごなずの内容を教えてー
+POST http://localhost:7071/api/chats/testchat20240630-01?message=７月のあごなずのセッション内容を教えてー\n\n# 検索結果\n## 1\nconnpass\nイベント検索\nダッシュボード\n新着イベント\nイベント管理\nイベント作成\n注意\n現在X（旧Twitter）でのソーシャルログインができない事象を確認しています。事前にX（旧Twitter）他に同ログインした上でconnpassのソーシャルログインを行うか、「ユーザー名（ほぼほぼメールアドレス）」と「パスワード」の組み合わせでのログインをお試しください。合わせてFAQもご確認ください。\nお知らせ\n2024年9月1日よりconnpassサービス料のスケジュールが変わること、利用規約に則り請求されることを明記します。\n9月1日以降のconnpassの利用料金に関する案内はこちら（イベントオーナー用）をご確認ください。\nお知らせ\nconnpassはさらなる価値のあるデータ提供をするため、イベントオーナー用APIの提供方法の見直しを決定しました。2024年5月23日(木)より「企業・法人」「コミュニティ及び個人」向けのプランを提供開始いたします。ご利用者さまには詳細別途ご案内させていただきます。詳細はヘルプページをご確認ください。\n0\nいいね！12\nポスト\n7月20\nなごあずの集い＃2\n招待制につき申込はできません。\n主催：なごあず\nハッシュタグ：#75azu\n一般・スピーカー\n無料\n先着順\n5/12人\n募集内容\n懇親会のみ参加枠（こちらのみ/14時募集締切り）\n無料\n申込者\n申込者一覧を見る\n参加者数\n1人\n開催日時\n2024/07/20(土) 15:30 ～ 17:00\nGoogleカレンダー\nicsファイル\n募集期間\n2024/06/23(日) 17:50 ～\n2024/07/19(金) 18:00まで\n会場\n日テレソリューションズ 中部支店\n名古屋市西区牛島町6−1（名古屋ルーセントタワー 28F）\nマップで見る\n\n## 2\n・宗教、マルチ商法など、他コミュニティの運営とは関係のない行為\n・過度な宣伝に関わったり、安全を脅かすもので必要な表示に従わないなど、コミュニティの運営を阻害する行為\n・上記に関する行為\nなお、違反行為が発覚した場合は、他コミュニティで情報を共有する場合があります。\n\n発表者\nオリビア\nshirokuma\n\n資料\n資料が投稿されると、最新の3件が表示されます。\n\nフィード\nコメント\nueponx さんが「なごやの集い#2」を公開しました。\nなごやの集い#2 を公開しました！\n2024/06/23 17:51\n\nグループ\nだだあず (JAZUG 名古屋支部)\n愛知の話でAzureに繋がってゆるーく集まる会\nメンバーです\nイベント数 4回\nメンバー数 90人\n\n開催日時が重複しているイベントに申し込んでいる場合、このイベントには申し込むことができません\n\nイベントへのお問い合わせ\n\n管理者\nueponx\nTetsuji Kato\n\n## 3\n会場について\n会場はレーレントタワー28階となります。高層ビルで低層レバーを使うことで28階へ行くことができます。エレベーターに乗る際は下記の場所が優先となりますので、出席お知らせ下さい。\nフロア図\nイベントの説明\n概要\n名古屋で楽しみながらMicrosoft Azureに触れるコミュニティ「なごあず」の勉強会です。\n※15/15以降の申し込みの場合、予約の都合で軽食の準備を用意できない場合があります。ご了承ください。\nスケジュール\n時間 タイトル スピーカー（敬称略）\n15:30~15:45 受付・挨拶・オープニングトーク なごあずメンバー\n15:45~16:05 これが噂のコスト最適化！？Compute Fleet（コンピューティング フリート）で VM 構築・運用！ オリビア (Aya Hasegawa)\n16:10~16:30 GPT4oで社内文書を読み解こう！！ しろくま\n16:30~17:00 クロージングトーク 加藤 岳司\n17:00~17:10 撤収 本会にご参加の皆さん\n20:00までに終了予定 懇親会（名古屋駅周辺） 懇親会にご参加の皆さん\nセッション1\nタイトル\nこれが噂のコスト最適化！？Compute Fleet（コンピューティング フリート）で VM 構築・運用！\nセッション概要\nMicrosoft Build 2024 で発表された Compute Fleet。 一体どんなことができるのか？ 登壇して頂きます！\n登壇者（敬称略）\nオリビア (Aya Hasegawa)\nセッション2\nタイトル\nGPT4oで社内文書を読み解こう！！\nセッション概要\nAzure OpenAI extension for Azure FunctionsとCosmosDBを組み合わせて、RAGしましょう！\n登壇者（敬称略）\nしろくま\n参加いただくすべての方へのお願い\n私たち個人・法人を問わず、参加者・スピーカー・スタッフ・スポンサーなどの勉強会に参加する全員をコミュニティメンバーと考えます。すべてのコミュニティメンバーが楽しむことができる場にするために、皆様から守っていただきたい行動方針をいくつかお知らせしたいと思います。詳細を読んで、当コミュニティへの参加をお願いします。\n法令を遵守するべくルールから逸脱する行動や、人種など他人の特性を軽視する行動（差別や生理的嫌悪は日本国法を遵守します）\nパラメータ紹介（手段は問いません）
+
+
+### Get the chatbot's response
+GET http://localhost:7071/api/chats/testchat20240630-01?timestampUTC=2024-06-30T07:51:10Z
+
+
+### Send the second message to the chatbot - やっぱり三泊にしようかなー。
+POST http://localhost:7071/api/chats/testchat20240630-01?message=やっぱり三泊にしようかなー。
+
+### Get chat state
+GET http://localhost:7071/api/chats/testchat20240630-01

@@ -2,7 +2,7 @@
   "name": "Functions Extensions for openai (Functions Python 3)",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceFolder": "/workspaces/",
   "forwardPorts": [
     7071,
     10000,

@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     platform: linux/amd64
     volumes:
-      - ../..:/workspaces:cached
+      - ../:/workspaces:cached
     command: sleep infinity
     network_mode: service:azurite
 
